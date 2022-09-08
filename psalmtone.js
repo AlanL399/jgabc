@@ -1286,21 +1286,45 @@ function addBoldItalic(text,accents,preparatory,sylsAfterBold,format,onlyVowel,v
          ((suffix && suffix.replace(/\(([^$]*)\$c([^)]*)\)/gi,String(verseNum?("$1" + verseNum + "$2"):"")).replace(/\$c/gi,String(verseNum))) || "");
 }
 splitPsalmsMap = {
-  "7"   : [10, 8],
-  "9"   : [19, 23],
-  "17"  : [27, 27],
-  "30"  : [10, 12, 9],
-  "32"  : [11, 11],
-  "33"  : [10, 12],
-  "43"  : [10, 11, 7],
-  "58"  : [10, 10],
-  "70"  : [13, 13],
-  "76"  : [12, 8],
-  "102" : [12, 10],
-  "106" : [14, 16, 13], 
-  "108" : [12, 8, 10],
+  "9" : {
+    "monastic": [19, 23],
+  },
+  "17" : {
+    "monastic": [27, 27],
+  },
+  "30" : {
+    "Compline": [6],
+  },
+  "36" : {
+    "monastic": [27,15],
+  },
+  "62&" : ["66"],
+  "67" : {
+    "monastic": [20,18],
+  },
+  "68" : {
+    "monastic": [19,23],
+  },
+  "77" : {
+    "monastic": [39,39],
+  },
+  "88" : {
+    "monastic": [18,33],
+  },
+  "103" : {
+    "monastic": [25, 11], 
+  },
+  "104" : {
+    "monastic": [21, 23], 
+  },
+  "105" : {
+    "monastic": [31, 16], 
+  },
+  "106" : {
+    "monastic": [24, 19], 
+  },
   "115&": {
-    "monastic, Monday Vespers": ["116"],
+    "monastic": ["116"],
   },
   "118" : {
     "": [16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16],
@@ -1314,29 +1338,36 @@ splitPsalmsMap = {
       8, 8, 8
     ]
   },
-  "135" : [9, 18],
   "138" : {
-    "": [12, 11],
-    "monastic, Thursday Vespers": [9, 14]
+    "monastic": [9, 14],
   },
   "142" : {
     "Saturday Lauds, divided on feast days only": [8, 6]
   },
-  "143" : [9, 9],
-  "144" : {
-    "": [7, 6, 9],
-    "monastic": [9, 13]
+  "143" : {
+    "monastic": [9, 9],
   },
-  "148&" : {
-    "monastic, Lauds": ["149&150"]
-  }
+  "144" : {
+    "monastic": [9, 13],
+  },
+  "148&" : ["149&150"]
 };
 splitPsalmNames = {
   "9"  : ["Tuesday Prime", "Wednesday Prime"],
   "17" : ["Friday Prime", "Saturday Prime"],
-  "144": {
-    "monastic": ["Friday Vespers", "Saturday Vespers"]
-  }
+  "36": ["Monday Matins", "Monday Matins"],
+  "67"  : ["Wednesday Matins", "Wednesday Matins"],
+  "68" : ["Wednesday Matins", "Wednesday Matins"],
+  "77": ["Thursday Matins", "Thursday Matins"],
+  "88"  : ["Friday Matins", "Friday Matins"],
+  "103" : ["Saturday Matins", "Saturday Matins"],
+  "104" : ["Saturday Matins", "Saturday Matins"],
+  "105" : ["Saturday Matins", "Saturday Matins"],
+  "106" : ["Saturday Matins", "Saturday Matins"],
+  "138" : ["Thursday Vespers", "Thursday Vespers"],
+  "142" : ["Saturday Lauds", "Saturday Lauds"],
+  "143" : ["Friday Vespers", "Friday Vespers"],
+  "144": ["Friday Vespers", "Saturday Vespers"]
 };
 function slicePsalm(text, psalmNum, psalmPart){
   var match = /^(\d+)(?:\.(.*))?$/.exec(psalmPart);
