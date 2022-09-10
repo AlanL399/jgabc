@@ -1397,7 +1397,7 @@ function normalizePsalm(text, psalmNum, psalmPart, includeGloriaPatri) {
 }
 var _novaVulgata=null;
 var regexBaseNovaVulgata=["PSALMUS ","[^\\n]*\\n((?:\\S|(\\s+(?!PSALMUS \\d)))+)(?:\\s+PSALMUS|\\s*$)"];
-function getPsalm(psalmNum, includeGloriaPatri, useNovaVulgata, success) {
+function getPsalm(psalmNum, includeGloriaPatri, useNovaVulgata, success, fail) {
   psalmNum = String(psalmNum);
   var match = /^(\d+)(?:\.(\d+))?(?:\s+\(([^)]+)\))?$/.exec(psalmNum);
   var splits = psalmNum.split(' & ');
@@ -1425,7 +1425,11 @@ function getPsalm(psalmNum, includeGloriaPatri, useNovaVulgata, success) {
       $.get("psalms/NovaVulgata/" + psalmNum).done(function(data){
         success(normalizePsalm(data, psalmNum, psalmPart, includeGloriaPatri));
       }).fail(function(jqXHR, textStatus){
-        success("ERROR retrieving Canticum '" + psalmNum + "': " + textStatus);
+        if (fail) {
+          fail();
+        } else {
+          success("ERROR retrieving Canticum '" + psalmNum + "': " + textStatus);
+        }
       });
     } else if(_novaVulgata==null){
       $.get("psalms/NovaVulgata.txt", function(data){
@@ -1437,6 +1441,8 @@ function getPsalm(psalmNum, includeGloriaPatri, useNovaVulgata, success) {
       var psalm = regex.exec(_novaVulgata);
       if(psalm) {
         setTimeout(function() { success(normalizePsalm(psalm[1], psalmNum, psalmPart, includeGloriaPatri)); });
+      } else if (fail) {
+        fail();
       } else {
         success("ERROR retrieving PSALMUS " + psalmNum);
       }
@@ -1466,7 +1472,14 @@ function getPsalm(psalmNum, includeGloriaPatri, useNovaVulgata, success) {
         }
       },
       complete: function(jqXHR, textStatus) {
-        if((t != undefined && t.responseText != undefined && t.responseText === "") || textStatus == "error") return;
+        if((t != undefined && t.responseText != undefined && t.responseText === "") || textStatus == "error") {
+          if (fail) {
+            fail();
+          } else {
+            success("ERROR retrieving Canticum '" + psalmNum + "': " + textStatus);
+          }
+          return;
+        }
         var text = t.responseText;
         if(!calledSuccess) {
           calledSuccess=true;
