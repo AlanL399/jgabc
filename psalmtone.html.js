@@ -319,6 +319,7 @@ function getCantica() {
   r.push("Canticum Ezechiae");
   r.push("Canticum Annae");
   r.push("Canticum Habacuc");
+  r.push("Canticum Moysis (Deut 32, 1-43)");
   r.push("Canticum Moysis (Deut 32, 1-18)");
   r.push("Canticum Moysis.1 (Deut 32, 1-21)");
   r.push("Canticum Moysis.2 (Deut 32, 22-43)");
@@ -346,6 +347,15 @@ function getCantica() {
   r.push("Canticum Jeremiæ 14, 17-21");
   r.push("Canticum Threni 5, 1-7, 15-17, 19-21");
   r.push("Canticum Ezechielis 36, 24-28");
+  return r;
+}
+function getGothic() {
+  var r = [];
+  r.push("(Gothicum) 148");
+  r.push("(Gothicum) 149");
+  r.push("(Gothicum) 150");
+  r.push("(Gothicum) Canticum trium Puerorum");
+  r.push("(Gothicum) Canticum Moysis (Deut 32, 1-43)");
   return r;
 }
 
@@ -844,7 +854,8 @@ $(function() {
   $("#cbEnglish").click(cbEnglishChanged);
   $("#selTones").append('<option>' + getPsalmTones().join('</option><option>') + '</option><optgroup label="Custom"></optgroup>');
   $("#selPsalm").append('<optgroup label="Psalms"><option>' + getPsalms().join('</option><option>') + '</option></optgroup>' +
-                        '<optgroup label="Canticles"><option>' + getCantica().join('</option><option>') + '</option></optgroup>');
+                        '<optgroup label="Canticles"><option>' + getCantica().join('</option><option>') + '</option></optgroup>' +
+                        '<optgroup label="Gothicum"><option>' + getGothic().join('</option><option>') + '</option></optgroup>');
   $("#selFormat").append('<option>' + Object.keys(bi_formats).join('</option><option>') + '</option>');
   $("#versegabc").keyup(updateVerseGabc);
   $("#versetext").keyup(updateText).keydown(internationalTextBoxKeyDown);
