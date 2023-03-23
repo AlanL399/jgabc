@@ -351,9 +351,14 @@ function getCantica() {
 }
 function getGothic() {
   var r = [];
+  r.push("(Gothicum) 003");
+  r.push("(Gothicum) 050");
+  r.push("(Gothicum) 056");
   r.push("(Gothicum) 148");
   r.push("(Gothicum) 149");
   r.push("(Gothicum) 150");
+  r.push("(Gothicum) 150 Lauda");
+  r.push("(Gothicum) 148+149+150 Lauda");
   r.push("(Gothicum) Canticum trium Puerorum");
   r.push("(Gothicum) Canticum Moysis (Deut 32, 1-43)");
   return r;
