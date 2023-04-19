@@ -355,6 +355,10 @@ function getGothic() {
   r.push("(Gothicum) 050");
   r.push("(Gothicum) 050 (Missa)");
   r.push("(Gothicum) 056");
+  r.push("(Gothicum) 069");
+  r.push("(Gothicum) 118a");
+  r.push("(Gothicum) 118b");
+  r.push("(Gothicum) 118c");
   r.push("(Gothicum) 148");
   r.push("(Gothicum) 149");
   r.push("(Gothicum) 150");
