@@ -352,6 +352,8 @@ function getCantica() {
 function getGothic() {
   var r = [];
   r.push("(Gothicum) 003");
+  r.push("(Gothicum) 053");
+  r.push("(Gothicum) 053 (Missa)");
   r.push("(Gothicum) 050");
   r.push("(Gothicum) 050 (Missa)");
   r.push("(Gothicum) 056");
@@ -371,12 +373,18 @@ function getGothic() {
   r.push("(Gothicum) 118g");
   r.push("(Gothicum) 118h");
   r.push("(Gothicum) 118i");
+  r.push("(Gothicum) 118p");
+  r.push("(Gothicum) 118q");
+  r.push("(Gothicum) 118r");
   r.push("(Gothicum) 118d (Missa)");
   r.push("(Gothicum) 118e (Missa)");
   r.push("(Gothicum) 118f (Missa)");
   r.push("(Gothicum) 118g (Missa)");
   r.push("(Gothicum) 118h (Missa)");
   r.push("(Gothicum) 118i (Missa)");
+  r.push("(Gothicum) 118p (Missa)");
+  r.push("(Gothicum) 118q (Missa)");
+  r.push("(Gothicum) 118r (Missa)");
   r.push("(Gothicum) 144");
   r.push("(Gothicum) 144.1");
   r.push("(Gothicum) 144.2");
