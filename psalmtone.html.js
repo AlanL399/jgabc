@@ -409,6 +409,7 @@ function getGothic() {
   r.push("(Gothicum) Canticum trium Puerorum Lauda");
   r.push("(Gothicum) Canticum trium Puerorum (Missa)");
   r.push("(Gothicum) Canticum Moysis (Deut 32, 1-43)");
+  r.push("(Gothicum) Canticum Habacuc 3, 2-19");
   return r;
 }
 
