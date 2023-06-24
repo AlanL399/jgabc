@@ -518,7 +518,7 @@ $(function(){
             return reduceStringArrayBy(line.split(reFullOrHalfBarsOrFullStops),3);
           });
           var ptn = sel[part].pattern;
-          if(!(ptn && ptn.length && ptn[0].length)) {
+          if(truePart.match(/alleluia|graduale|tractus/) || !(ptn && ptn.length && ptn[0].length)) {
             sel[part].pattern = deducePattern(plaintext, lines, !truePart.match(/alleluia|graduale|tractus/));
           }
           text = sel[part].text = versifyByPattern(lines, sel[part].pattern);
@@ -2472,8 +2472,6 @@ $(function(){
       .replace(/\[([^\]\s-áéíóú]+)\](?=\()/g,'\|$1 ')  // Translations are used as additional lyrics
       .replace(/\[([^\]\s-]+)-?\](?=\()/g,'\|$1')
       .replace(/(<b>[^<]+)œ́/g,'$1œ</b>\u0301<b>') // œ́ character doesn't work in the bold version of this font.
-      .replace(/<\/?sc>/g,'%')
-      .replace(/<\/?b>/g,'*')
         .replace(/(?:{})?<i>\(([^)]+)\)<\/i>/g,'_{}$1_') // There is no way to escape an open parenthesis in Exsurge.
       .replace(/<\/?i>/g,'_')
       .replace(/(\)\s+(?:\([^)]*\))*)(\s*[^(^|]+)(?=\(\))/g,'$1^$2^') // make all text with empty parentheses red

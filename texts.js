@@ -950,7 +950,7 @@ texts = {
 		"777": "justus ut palma florebit sicut cedrus quæ in libano est multiplicabitur alleluia",
 		"779": "inveni david servum meum oleo sancto unxi eum manus enim mea auxiliabitur ei et brachium meum confortabit eum alleluia",
 		"786": "lætamini in domino et exsultate justi et gloriamini omnes recti corde",
-		"787": "recordare virgo mater in conspectu dei ut loquaris pro nobis bona et ut avertat indignationem suam a no alleluia",
+		"787": "recordare virgo mater in conspectu dei ut loquaris pro nobis bona et ut avertat indignationem suam a nobis alleluia",
 		"789": "angelus domini descendit de cælo et dixit mulieribus quem quæritis surrexit sicut dixit alleluia",
 		"805": "venite filii audite me timorem domini docebo vos",
 		"809": "timeat eum omne semen israel quoniam non sprevit neque despexit deprecationem pauperis alleluia",
@@ -1036,7 +1036,7 @@ texts = {
 		"3313": "ubi caritas est vera deus ibi est ℣ congregavit nos in unum christi amor ℣ exsultemus et in ipso jucundemur ℣ timeamus et amemus deum vivum ℣ et ex corde diligamus nos sincero ubi caritas est vera deus ibi est ℣ simul ergo cum in unum congregamur ℣ ne nos mente dividamur caveamus ℣ cessent jurgia maligna cessent lites ℣ et in medio nostri sit christus deus ubi caritas est vera deus ibi est ℣ simul quoque cum beatis videamus ℣ glorianter vultum tuum christe deus ℣ gaudium quod est immensum atque probum ℣ sæcula per infinita sæculorum",
 		"3315": "viri galilæi quid admiramini aspicientes in cælum hic jesus qui assumptus est a vobis in cælum sic veniet quemadmodum vidistis eum ascendentem in cælum alleluia",
 		"3317": "assumpta est maria in cælum gaudent angeli collaudantes benedicunt dominum alleluia",
-		"8253": "afferentur regi virgines proximæ ejus afferentur tibi in lætitia et exsultatione adducentur in templum regis pro patribus tuis nati sunt tibi filii contitues eos principes super omnem terram"
+		"8253": "afferentur regi virgines proximæ ejus afferentur tibi in lætitia et exsultatione adducentur in templum regis pro patribus tuis nati sunt tibi filii constitues eos principes super omnem terram"
 	},
 	"Communio": {
 		"6": "quam magna multitudo dulcedinis tuæ domine quam abscondisti timentibus te alleluia",
@@ -1343,7 +1343,7 @@ texts = {
 		"2602": "ave regina cælorum ave domina angelorum salve radix salve porta ex qua mundo lux est orta gaude virgo gloriosa super omnes speciosa vale o valde decora et pro nobis christum exora",
 		"2715": "salve regina mater misericordiæ vita dulcedo et spes nostra salve ad te clamamus exsules filii hevæ ad te suspiramus gementes et flentes in hac lacrimarum valle eia ergo advocata nostra illos tuos misericordes oculos ad nos converte et jesum benedictum fructum ventris tui nobis post hoc exsilium ostende o clemens o pia o dulcis virgo maria",
 		"2813": "veni sancte spiritus reple tuorum corda fidelium et tui amoris in eis ignem accende qui per diversitatem linguarum cunctarum gentes in unitate fidei congregasti",
-		"2826": "o quam suavis est domine spiritus tuus qui ut dulcedinem tuam in filios demonstrares pane suavissimo de cælo præstito esurientes reples bonis fastidiosos divites dimittens inanes",
+		"2826": "o quam suavis est domine spiritus tuus qui ut dulcedinem tuam in filios demonstrares pane suavissimo de cælo præstito esurientes reples bonis fastidiosos divites dimittens inanes e u o u a e",
 		"2877": "o clavis david et sceptrum domus israel qui aperis et nemo claudit claudis et nemo aperit veni et educ vinctum de domo carceris sedentem in tenebris et umbra mortis e u o u a e",
 		"2897": "lumen ad revelationem gentium et gloriam plebis tuæ israel ℣ nunc dimittis servum tuum domine secundum verbum tuum in pace lumen quia viderunt oculi mei salutare tuum quod parasti ante faciem omnium populorum gloria patri",
 		"3017": "adoremus in æternum sanctissimum sacramentum ℣ laudate dominum omnes gentes laudate eum omnes populi quoniam confirmata est super nos misericordia ejus et veritas domini manet in æternum adoremus gloria patri et filio et spiritui sancto sicut erat in principio et nunc et semper et in sæcula sæculorum amen adoremus",
@@ -1352,16 +1352,16 @@ texts = {
 		"3300": "ave regina cælorum ave domina angelorum salve radix salve porta ex qua mundo lux est orta gaude virgo gloriosa super omnes speciosa vale o valde decora et pro nobis christum exora",
 		"3301": "regina cæli lætare alleluia quia quem meruisti portare alleluia resurrexit sicut dixit alleluia ora pro nobis deum alleluia",
 		"4010": "adoremus in æternum sanctissimum sacramentum adoremus laudate dominum omnes gentes laudate eum omnes populi adoremus quoniam confirmata est super nos misericordia ejus et veritas domini manet in æternum adoremus gloria patri gloria filio gloria spiritui sancto adoremus sicut erat in principio et nunc et semper et in sæcula sæculorum amen adoremus",
-		"8109": "cum audisset populis quia jesus venit jerosolymam acceperunt ramos palmarum et exierunt ei obviam et clamabant pueri dicentes hic est qui venturus est in salutem populi hic est salus nostra et redemptio israel quantus est iste cui throni et dominationes occurunt noli timere filia sion ecce rex tuus venit tibi sedens super pullum asinæ sicut scriptum est salve rex fabricator mundi qui venisti redimere nos",
+		"8109": "cum audisset populus quia jesus venit jerosolymam acceperunt ramos palmarum et exierunt ei obviam et clamabant pueri dicentes hic est qui venturus est in salutem populi hic est salus nostra et redemptio israel quantus est iste cui throni et dominationes occurunt noli timere filia sion ecce rex tuus venit tibi sedens super pullum asinæ sicut scriptum est salve rex fabricator mundi qui venisti redimere nos",
 		"8110": "cum appropinquaret dominus jerosolymam misit duos ex discipulis suis dicens ite in castellum quod est contra vos et invenietis pullum asinæ alligatum super quem nullus hominum sedit solvite et adducite mihi si quis vos interrogaverit dicite opus domino est solventes adduxerunt ad jesum et imposuerunt illi vestimenta et sedit super eum alii expandebant vestimenta sua in via alii ramos de arboribus exsternebant et qui sequebantur clamabant hosanna benedictus qui venit in nomine domini benedictum regnum patris nostri david hosanna in excelsis miserere nobis fili david",
 		"8146": "alma redemptoris mater quæ pervia cæli porta manes et stella maris succurre cadenti surgere qui curat populo tu quæ genuisti natura mirante tuum sanctum genitorem virgo prius ac posterius gabrielis ab ore sumens illud ave peccatorum miserere",
 		"8177": "ante sex dies solemnis paschæ quando venit dominus in civitatem jerusalem occurrerunt ei pueri et in manibus portabant ramos palmarum et clamabant voce magna dicentes hosanna in excelsis benedictus qui venisti in multitudine misericordiæ hosanna in excelsis",
-		"8187": "vespere autem sabbati quæ lucescit in prima sabbati venit maria magdalene et altera maria videre sepulcrum alleluia",
 		"8268": "benedicta sit sancta trinitas atque indivisa unitas confitebimur ei quia fecit nobiscum misericordiam suam ℣ benedicamus patrem et filium cum sancto spiritu ℣ quam dilecta tabernacula tua domine virtutum concupiscit et deficit anima mea in atria domini benedicta sit",
 		"8283": "cum angelis et pueris fideles inveniamur triumphatori mortis clamantes hosanna in excelsis",
 		"8284": "turba multa quæ convenerat ad diem festum clamabat domino benedictus qui venit in nomine domini hosanna in excelsis",
 		"10298": "vidi aquam egredientem de templo a latere dextro alleluia et omnes ad quos pervenit aqua ista salvi facti sunt et dicent alleluia alleluia confitemini domino quoniam bonus quoniam in sæculum misericordia ejus gloria patri",
-		"10358": "vidi aquam egredientem de templo a latere dextro alleluia et omnes ad quos pervenit aqua ista salvi facti sunt et dicent alleluia alleluia confitemini domino quoniam bonus quoniam in sæculum misericordia ejus gloria patri"
+		"10358": "vidi aquam egredientem de templo a latere dextro alleluia et omnes ad quos pervenit aqua ista salvi facti sunt et dicent alleluia alleluia confitemini domino quoniam bonus quoniam in sæculum misericordia ejus gloria patri",
+		"12662": "vespere autem sabbati quæ lucescit in prima sabbati venit maria magdalene et altera maria videre sepulcrum alleluia"
 	},
 	"Canticum": {
 		"943": "sicut cervus desiderat ad fontes aquarum ita desiderat anima mea ad te deus ℣ sitivit anima mea ad deum vivum quando veniam et apparebo ante faciem dei mei ℣ fuerunt mihi lacrimæ meæ panes die ac nocte dum dicitur mihi per singulos dies ubi est deus tuus",
