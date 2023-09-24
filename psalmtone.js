@@ -215,18 +215,35 @@ var o_g_tones =
                     },
              'irregularis': {clef:"c4",
                       mediant:"f gh hr 'g fr f.",
-                      terminations:{'a': "hr ixi g ixi h.",
-                                    'a2':"hr 'ixi gr gr 'ixi ir h."
+                      terminations:{'a2':"hr 'ixi gr gr 'ixi ir h.",
+                                    'a': "hr ixi g ixi h."
                                    }
                     },
              'in directum': {clef:"c3",
+			 // 1949,1961,1912
+                      mediant:"hr g f 'h hr h.",
+                      termination:"hr 'h fr f."
+                    },
+             // 'in directum (1903 Liber Usualis)': {clef:"c3",
+			 // need to implement no flex, currently M3
+                      // mediant:"hr g f 'h hr h.",
+                      // termination:"hr h."
+                    // },
+             'in directum (Oct. Paschæ)': {clef:"c3",
                       mediant:"e f hr i 'i fr f.",
                       termination:"hr e f 'g fr f."
                     },
-             'in dir. monasticus': {clef:"c3",
-                      mediant:"hr g f 'h hr h.",
-                      termination:"hr h."
+             'in directum (Nov. 2. ad lib)': {clef:"c4",
+			 // DA, M2 flex
+                      mediant:"f gh hr 'g fr f.",
+                      termination:"hr f 'g gr g."
                     },
+             'Versiculum':{clef:"c3",
+                    mediant:"hr h g_hvGFEfgf."
+                   },
+             'Versiculum (Recentiorem)':{clef:"c4",
+                    mediant:"hr h h/hf,fgwhvGFEfg/gf"
+                   },
              // 'in directum (alt.)': {clef:"c4",
              //          mediant:"t[0].word.length==1?f gh hr g h.:f gh hr 'g fr f.",
              //          termination:"hr f 'g gr g."
@@ -254,77 +271,71 @@ var o_g_tones =
                           "termination":"ig hi ir i!jwk i h hhh fe.."},
              "Introit 8":{"clef":"c4",
                           "mediant":"g hg gj jr ji jk k 'jk jr j.",
-                          "termination":"jh hj jr j/ji gh ji 'h hr g."},
-             'V.1':{clef:"c3",
-                    mediant:"hr h g_hvGFEfgf."
-                   },
-             'V.2':{clef:"c4",
-                    mediant:"hr h h/hf,fgwhvGFEfg/gf"
-                   }
+                          "termination":"jh hj jr j/ji gh ji 'h hr g."}
             };
-var d_tones = {'1.':{clef:"c4",
-                  mediant:"f gh hr 'ixi hr 'g hr h",
-                  solemn:"f gh hr hg ixgi h hr 'hg gh",
-                  terminations:{'D':"hr g f 'gh gr gvFED",
-                                'g':"hr g f 'gh gr g",
-                                'a':"hr g f 'g hr h"
-                               }
-                 },
-             '2.':{clef:"f3",
-                  mediant:"e f hr 'i hr h",
-                  solemn:"e fe eh hr hg hi i 'hi hr h",
-                  termination:"hr g 'e fr f"
-                 },
-             '3.':{clef:"c4",
-                  mediant:"g hj jr 'k jr jr 'ih j",
-                  solemn:"g hj jr 'jk jr jr 'ih hj",
-                  terminations:{'a':"jr h 'j jr ih",
-                                'a2':"jr ji hi 'h gr gh"
-                               }
-                 },
-             '4.':{clef:"c4",
-                  mediant:"h gh hr g h 'i hr h",
-                  solemn:"h gh hr hg gi i 'hi hr h",
-                  terminations:{'E':"hr g h ih gr 'gf e"
-                               }
-                 },
-             '4 alt':{clef:"c3",
-                      mediant:"i hi ir h i 'j ir i",
-                      solemn:"i hi ir ih hj j 'ij ir i",
-                      terminations:{'A':"ir h i j 'h fr f"
-                                   }
-                     },
-             '5.':{clef:"c3",
-                  mediant:"d f hr 'i hr h",
-                  solemn:"d f hr i 'i hr h",
-                  termination:"hr 'i gr 'h fr f"
-                 },
-             '6.':{clef:"c4",
-                  mediant:"f gh hr 'ixi hr 'g hr h",
-                  solemn:"f gh hr hg ixgi h hr 'hg gh",
-                  termination:"hr f gh 'g fr f"
-                 },
-             '7.':{clef:"c3",
-                  mediant:"hg hi ir 'k jr 'i jr j",
-                  shortMediant:"hg hi ir",
-                  solemn:"ehg hi ir 'ik jr jr 'ji ij",
-                  shortSolemn:"ehg hi ir i",
-                  terminations:{'a':"ir 'j ir 'h hr gf",
-                                'd':"ir 'j ir 'h hr gi"
-                               }
-                 },
-             '8.':{clef:"c4",
-                  mediant:"g h jr 'k jr j",
-                  solemn:"g hg gj jr ji jk k 'jk jr j",
-                  terminations:{'G':"jr i j 'h gr g",
-                                'c':"jr h j 'k jr j"
-                               }
-                 },
-             'per.':{clef:"c4",
-                     mediant:"ixhi hr ixi h 'g fr f",
-                     termination:"gr d 'f fr ed"
-                    }
-            };
+// var d_tones = {'1.':{clef:"c4",
+                  // mediant:"f gh hr 'ixi hr 'g hr h",
+                  // solemn:"f gh hr hg ixgi h hr 'hg gh",
+                  // terminations:{'D':"hr g f 'gh gr gvFED",
+                                // 'g':"hr g f 'gh gr g",
+                                // 'a':"hr g f 'g hr h"
+                               // }
+                 // },
+             // '2.':{clef:"f3",
+                  // mediant:"e f hr 'i hr h",
+                  // solemn:"e fe eh hr hg hi i 'hi hr h",
+                  // termination:"hr g 'e fr f"
+                 // },
+             // '3.':{clef:"c4",
+                  // mediant:"g hj jr 'k jr jr 'ih j",
+                  // solemn:"g hj jr 'jk jr jr 'ih hj",
+                  // terminations:{'a':"jr h 'j jr ih",
+                                // 'a2':"jr ji hi 'h gr gh"
+                               // }
+                 // },
+             // '4.':{clef:"c4",
+                  // mediant:"h gh hr g h 'i hr h",
+                  // solemn:"h gh hr hg gi i 'hi hr h",
+                  // terminations:{'E':"hr g h ih gr 'gf e"
+                               // }
+                 // },
+             // '4 alt':{clef:"c3",
+                      // mediant:"i hi ir h i 'j ir i",
+                      // solemn:"i hi ir ih hj j 'ij ir i",
+                      // terminations:{'A':"ir h i j 'h fr f"
+                                   // }
+                     // },
+             // '5.':{clef:"c3",
+                  // mediant:"d f hr 'i hr h",
+                  // solemn:"d f hr i 'i hr h",
+                  // termination:"hr 'i gr 'h fr f"
+                 // },
+             // '6.':{clef:"c4",
+                  // mediant:"f gh hr 'ixi hr 'g hr h",
+                  // solemn:"f gh hr hg ixgi h hr 'hg gh",
+                  // termination:"hr f gh 'g fr f"
+                 // },
+             // '7.':{clef:"c3",
+                  // mediant:"hg hi ir 'k jr 'i jr j",
+                  // shortMediant:"hg hi ir",
+                  // solemn:"ehg hi ir 'ik jr jr 'ji ij",
+                  // shortSolemn:"ehg hi ir i",
+                  // terminations:{'a':"ir 'j ir 'h hr gf",
+                                // 'd':"ir 'j ir 'h hr gi"
+                               // }
+                 // },
+             // '8.':{clef:"c4",
+                  // mediant:"g h jr 'k jr j",
+                  // solemn:"g hg gj jr ji jk k 'jk jr j",
+                  // terminations:{'G':"jr i j 'h gr g",
+                                // 'c':"jr h j 'k jr j"
+                               // }
+                 // },
+             // 'per.':{clef:"c4",
+                     // mediant:"ixhi hr ixi h 'g fr f",
+                     // termination:"gr d 'f fr ed"
+                    // }
+            // };
 var Syl = (function(){
   var intUpdate=setTimeout(function(){Syl.updateWords();},8000);
   return {
