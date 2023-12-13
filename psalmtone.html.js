@@ -352,6 +352,9 @@ function getCantica() {
 function getGothic() {
   var r = [];
   r.push("(Gothicum) 003");
+  r.push("(Gothicum) 017");
+  r.push("(Gothicum) 018");
+  r.push("(Gothicum) 019");
   r.push("(Gothicum) 053");
   r.push("(Gothicum) 053 (Missa)");
   r.push("(Gothicum) 050");
