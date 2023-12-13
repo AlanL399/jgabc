@@ -320,7 +320,7 @@ function getCantica() {
   r.push("Canticum Annae");
   r.push("Canticum Habacuc");
   r.push("Canticum Moysis (Deut 32, 1-43)");
-  r.push("Canticum Moysis (Deut 32, 1-18)");
+  r.push("Canticum Moysis 1960 (Deut 32, 1-18)");
   r.push("Canticum Moysis.1 (Deut 32, 1-21)");
   r.push("Canticum Moysis.2 (Deut 32, 22-43)");
   r.push("Canticum Moysis (Exod)");
