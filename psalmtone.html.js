@@ -363,12 +363,15 @@ function getGothic() {
   r.push("(Gothicum) 066");
   r.push("(Gothicum) 066 (Missa)");
   r.push("(Gothicum) 069");
+  r.push("(Gothicum) 080");
+  r.push("(Gothicum) 082");
   r.push("(Gothicum) 090");
   r.push("(Gothicum) 090 (Missa)");
   r.push("(Gothicum) 094");
   r.push("(Gothicum) 094 (Missa)");
   r.push("(Gothicum) 112");
   r.push("(Gothicum) 112 (Missa)");
+  r.push("(Gothicum) 113");
   r.push("(Gothicum) 118a");
   r.push("(Gothicum) 118b");
   r.push("(Gothicum) 118c");
@@ -396,6 +399,9 @@ function getGothic() {
   r.push("(Gothicum) 121 (Missa)");
   r.push("(Gothicum) 122 (Missa)");
   r.push("(Gothicum) 123 (Missa)");
+  r.push("(Gothicum) 124");
+  r.push("(Gothicum) 130");
+  r.push("(Gothicum) 134");
   r.push("(Gothicum) 144");
   r.push("(Gothicum) 144.1");
   r.push("(Gothicum) 144.2");
